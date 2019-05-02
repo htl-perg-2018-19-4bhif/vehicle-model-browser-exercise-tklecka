@@ -1,0 +1,18 @@
+<mat-toolbar color="primary" ><div>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+          <button mat-menu-item routerLink="models">
+              <mat-icon>time_to_leave</mat-icon>
+              <span>Models</span>
+            </button>
+        <button mat-menu-item routerLink="about">
+          <mat-icon>info</mat-icon>
+          <span>About</span>
+        </button>
+      </mat-menu>
+    </div><div>© Tim Klecka</div>
+    </mat-toolbar>
+<router-outlet></router-outlet>
+
